@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github User Search</title>
+
+    <!-- Bootswatch theme -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/litera/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar bg-light mb-4">
+      <a href="#" class="navbar-brand container">Github User Finder</a>
+    </nav>
+    <div class="card card-body container" id="search-container">
+      <form>
+        <p class="lead">Serach User Profiles from Github</p>
+        <input
+          type="text"
+          id="search-text"
+          name="search-text"
+          class="form-control"
+          placeholder="Search User..."
+        />
+      </form>
+      <div id="profile"></div>
+      <div id="repos"></div>
+    </div>
+
+    <!-- Load all the scripts -->
+    <script src="github.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
